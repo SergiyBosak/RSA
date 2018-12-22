@@ -10,7 +10,7 @@ namespace RSA
 {
     class Program
     {
-        const string ERROR_LOG = @"C:\Users\Сергей\Desktop\C#\errors.txt";
+        const string ERROR_LOG = "errors.log";
 
         static void Main(string[] args)
         {
