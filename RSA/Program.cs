@@ -102,12 +102,10 @@ namespace RSA
 
             do
             {
-                ++iterationCount;
-
                 pResult = GetRandomBigInteger(qResult, min, max, true);
                 qResult = GetRandomBigInteger(pResult, min, max, true);
             }
-            while (iterationCount < MAX_ITERATION_COUNT && !(IsSimpleNumber(pResult) && IsSimpleNumber(qResult)));
+            while (++iterationCount < MAX_ITERATION_COUNT && !(IsSimpleNumber(pResult) && IsSimpleNumber(qResult)));
 
             watch.Stop();
 
