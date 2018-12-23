@@ -95,8 +95,8 @@ namespace RSA
 
             int iterationCount = 0;
 
-            BigInteger min = new BigInteger(1000000000);
-            BigInteger max = new BigInteger(9999999999);
+            BigInteger min = new BigInteger(10000000000);
+            BigInteger max = new BigInteger(99999999999);
 
             BigInteger pResult = Environment.TickCount;
             BigInteger qResult = DateTime.Now.Ticks;
