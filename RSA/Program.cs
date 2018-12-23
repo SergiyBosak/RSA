@@ -22,6 +22,9 @@ namespace RSA
                     Console.WriteLine($"Ошибка: не удалось сгенерировать простые числа за { MAX_ITERATION_COUNT } попыток");
                     Console.WriteLine("Нажмите Escape, чтобы выйти или любую клавишу, чтобы повторить");
 
+                    if (Console.ReadKey(true).Key == ConsoleKey.Escape)
+                        break;
+
                     continue;
                 }
 
